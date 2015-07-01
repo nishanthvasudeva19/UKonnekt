@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:padding="5dp"
+            android:src="@drawable/upcoming_tt" />
+
+        <TextView
+            android:id="@+id/TT_CourseName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imageView1"
+            android:text="Course Name"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/TT_Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="Date" />
+
+        <TextView
+            android:id="@+id/TT_CourseTopic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:layout_alignLeft="@+id/TT_CourseName"
+            android:layout_below="@+id/TT_CourseName"
+            android:text="CourseTopic" />
+
+        <TextView
+            android:id="@+id/TT_StartTIme"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignLeft="@+id/TT_CourseTopic"
+            android:layout_below="@+id/TT_CourseTopic"
+            android:text="StartTime" />
+
+        <TextView
+            android:id="@+id/TT_EndTime"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_toRightOf="@+id/textView1"
+            android:text="EndTime" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignBaseline="@+id/TT_StartTIme"
+            android:layout_alignBottom="@+id/TT_StartTIme"
+            android:layout_toRightOf="@+id/TT_StartTIme"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="-"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </RelativeLayout>
+

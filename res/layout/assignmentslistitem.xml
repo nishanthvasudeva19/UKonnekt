@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imageViewAssignment"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:padding="5dp"
+            android:src="@drawable/assignment" />
+
+        <TextView
+            android:id="@+id/assignmentTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imageViewAssignment"
+            android:text="Title"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textViewDD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:layout_alignLeft="@+id/assignmentTitle"
+            android:layout_below="@+id/assignmentTitle"
+            android:text="Due Date: " />
+
+        <TextView
+            android:id="@+id/assignmentDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewDD"
+            android:layout_below="@+id/textViewDD"
+            android:text="Description" 
+            android:lines="2"
+            />
+
+        <TextView
+            android:id="@+id/assignmentDueDateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textViewDD"
+            android:layout_alignBottom="@+id/textViewDD"
+            android:layout_toRightOf="@+id/textViewDD"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:text="Due Date" />
+
+    </RelativeLayout>
+

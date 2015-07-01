@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+    
+    <TextView
+        android:id="@+id/txtLabel"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="16dp"
+        android:text="Events"/>
+
+    <EditText
+        android:id="@+id/annTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="45dp"
+        android:layout_toLeftOf="@+id/txtLabel"
+        android:ems="10"
+        android:hint="Title" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/annDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/annTitle"
+        android:layout_toLeftOf="@+id/txtLabel"
+        android:ems="10"
+        android:hint="Description" />
+
+    <Button
+        android:id="@+id/annSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/annDesc"
+        android:layout_below="@+id/annDesc"
+        android:layout_marginRight="21dp"
+        android:onClick="postAnnouncements"
+        android:text="Post" />
+
+</RelativeLayout>

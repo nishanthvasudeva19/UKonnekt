@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ukonnekt</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_log_in">Ukonnekt</string>
+    <string name="drawer_open">Navigation Drawer Opened</string>
+    <string name="drawer_close">Navigation Drawer Closed</string>
+    
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+		<item >Time Table</item>
+		<item >Course 1</item>
+        <item >Course 2</item>
+        <item >Course 3</item>
+        <item >Events</item>
+        <item >Preferences</item>
+
+    </string-array>
+    
+    
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/timetable</item>
+        <item>@drawable/course1</item>
+        <item>@drawable/course2</item>
+        <item>@drawable/course3</item>
+        <item>@drawable/events</item>
+        <item>@drawable/preferences</item>
+    </array>
+    
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+
+</resources>
